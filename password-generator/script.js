@@ -10,7 +10,7 @@ const generateEl = document.getElementById('generate')
 const upperLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 const lowerLetters = 'abcdefghijklmnopqrstuvwxyz'
 const numbers = '0123456789'
-const symbols ='!@#$%^&*(){}[]=<>/,.'
+const symbols ='!@#$%^&*(){}[]=<>/,.-_'
 
 function getLowercase(){
     return lowerLetters[Math.floor(Math.random() * lowerLetters.length)]
@@ -29,7 +29,7 @@ function getSymbol(){
 }
 
 function generatePassword(){
-    const len = lenEl.ariaValueMax;
+    const len = lenEl.value;
 
     let password = "";
     
